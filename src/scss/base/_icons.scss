@@ -1,0 +1,11 @@
+@use '../abstracts/mixins' as *;
+
+// Global icons
+*[class*='icon-'] {
+  &.logo {
+    @include icon('logo.svg');
+  }
+  &.icon-pin-green {
+    @include icon('icons/icon-pin-green.svg');
+  }
+}
