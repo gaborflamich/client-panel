@@ -47,3 +47,7 @@ Thumbs.db
 
 # Trendency git version file
 /src/environments/git-version.js
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json

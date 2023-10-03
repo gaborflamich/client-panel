@@ -34,8 +34,8 @@
               "includePaths": ["src/scss"]
             },
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["node_modules/font-awesome/font-awesome.css", "node_modules/bootstrap/scss/bootstrap.scss", "src/scss/styles.scss"],
-            "scripts": [],
+            "styles": ["node_modules/bootstrap/scss/bootstrap.scss", "src/scss/styles.scss"],
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"],
             "allowedCommonJsDependencies": ["date-fns-tz"]
           },
           "configurations": {

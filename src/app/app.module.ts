@@ -9,6 +9,9 @@ import { appRoutes } from './app.routing';
 import { CoreModule } from './core/core.module';
 import { AppEnvironment, CommonHttpInterceptor } from '@trendency/core';
 
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -18,6 +21,8 @@ import { AppEnvironment, CommonHttpInterceptor } from '@trendency/core';
       initialNavigation: 'enabledBlocking',
     }),
     CoreModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [
     {

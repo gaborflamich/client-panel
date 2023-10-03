@@ -6,3 +6,9 @@
   max-width: 60px;
   margin-right: 50px;
 }
+.navbar-collapse {
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

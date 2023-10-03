@@ -1,1 +1,5 @@
-<p>clients works!</p>
+<ul>
+  <li *ngFor="let item of name$ | async">
+    {{ item.name }}
+  </li>
+</ul>

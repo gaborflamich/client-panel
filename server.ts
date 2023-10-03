@@ -1,4 +1,5 @@
 import 'zone.js/dist/zone-node';
+import 'zone.js/dist/zone-patch-rxjs';
 
 import type { Request, Response } from 'express';
 
